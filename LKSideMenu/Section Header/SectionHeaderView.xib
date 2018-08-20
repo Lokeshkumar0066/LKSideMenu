@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SectionHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="download.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="cbQ-Lg-rPW">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LK6-WL-Zsv">
+                    <rect key="frame" x="15" y="21" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="a2R-LV-b2R"/>
+                        <constraint firstAttribute="width" constant="80" id="qmd-6C-lGd"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company Name" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="766-f2-Xnf">
+                    <rect key="frame" x="103" y="21" width="201" height="32"/>
+                    <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="20"/>
+                    <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address: Mumbai Branch" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ndg-RP-FYz">
+                    <rect key="frame" x="103" y="53" width="201" height="19.5"/>
+                    <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="12"/>
+                    <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSK-Sd-7pp">
+                    <rect key="frame" x="229.5" y="86" width="90.5" height="34"/>
+                    <attributedString key="attributedText">
+                        <fragment content="LK">
+                            <attributes>
+                                <color key="NSColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="21" name="Noteworthy-Bold"/>
+                                <font key="NSOriginalFont" size="17" name="Noteworthy-Bold"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="SideMenu">
+                            <attributes>
+                                <color key="NSColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="15" name="Noteworthy-Bold"/>
+                                <font key="NSOriginalFont" size="17" name="Noteworthy-Bold"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="cbQ-Lg-rPW" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="1nR-Vb-Kq0"/>
+                <constraint firstItem="LK6-WL-Zsv" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="2fb-zg-9WZ"/>
+                <constraint firstItem="cbQ-Lg-rPW" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="2yK-CP-wbE"/>
+                <constraint firstItem="Ndg-RP-FYz" firstAttribute="leading" secondItem="766-f2-Xnf" secondAttribute="leading" id="A0s-Qa-x2H"/>
+                <constraint firstItem="766-f2-Xnf" firstAttribute="top" secondItem="LK6-WL-Zsv" secondAttribute="top" id="KGd-83-VoH"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="766-f2-Xnf" secondAttribute="trailing" constant="16" id="Mxl-O1-HVO"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="bSK-Sd-7pp" secondAttribute="trailing" id="OVN-V0-4MQ"/>
+                <constraint firstItem="Ndg-RP-FYz" firstAttribute="top" secondItem="766-f2-Xnf" secondAttribute="bottom" id="OnD-03-Rqq"/>
+                <constraint firstItem="cbQ-Lg-rPW" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Oub-1Y-aim"/>
+                <constraint firstItem="766-f2-Xnf" firstAttribute="leading" secondItem="LK6-WL-Zsv" secondAttribute="trailing" constant="8" id="TEP-j2-b2Q"/>
+                <constraint firstItem="LK6-WL-Zsv" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="21" id="fZh-hT-QB7"/>
+                <constraint firstItem="cbQ-Lg-rPW" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="mDB-B0-nsN"/>
+                <constraint firstItem="Ndg-RP-FYz" firstAttribute="trailing" secondItem="766-f2-Xnf" secondAttribute="trailing" id="nSH-RG-6ZL"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="bSK-Sd-7pp" secondAttribute="bottom" id="oAN-T0-rXL"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="companyAddress" destination="Ndg-RP-FYz" id="pP5-sh-0FW"/>
+                <outlet property="companyName" destination="766-f2-Xnf" id="anh-oU-TpU"/>
+                <outlet property="profileImage" destination="LK6-WL-Zsv" id="Xz0-Kb-fB1"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="download.jpeg" width="276" height="183"/>
+    </resources>
+</document>
